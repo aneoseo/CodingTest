@@ -49,7 +49,7 @@ Output:
 
 ---
 
-"""Checkpoint"""
+**Checkpoint**
 
 - GROUP_CONCAT()
     - `GROUP BY`를 사용했을 때, 그룹별로 문자열들을 합치는 함수(집계 함수)

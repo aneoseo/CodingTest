@@ -48,7 +48,7 @@ Output:
 
 ---
 
-"""Checkpoint"""
+**Checkpoint**
 
 - UPDATE
 - CASE

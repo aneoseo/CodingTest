@@ -53,7 +53,7 @@ Output:
 
 ---
 
-"""Checkpoint"""
+**Checkpoint**
 
 - 정규표현식
 - `'c'` 옵션

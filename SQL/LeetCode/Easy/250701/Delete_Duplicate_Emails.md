@@ -45,7 +45,7 @@ Output:
 
 ---
 
-"""Checkpoint"""
+**Checkpoint**
 
 - DELETE
 - SELF JOIN

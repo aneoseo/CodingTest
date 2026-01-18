@@ -47,6 +47,6 @@ Output:
 
 ---
 
-"""Checkpoint"""
+**Checkpoint**
 
 - MySQL에서는 `PIVOT`/`UNPIVOT` 구문을 직접 지원하지 않음

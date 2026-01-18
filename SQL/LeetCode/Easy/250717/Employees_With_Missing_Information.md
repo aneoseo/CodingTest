@@ -66,6 +66,6 @@ Output:
 
 ---
 
-"""Checkpoint"""
+**Checkpoint**
 
 - MySQL은 `FULL OUTER JOIN`을 지원하지 않음

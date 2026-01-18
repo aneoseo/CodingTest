@@ -42,6 +42,6 @@ Output:
 
 ---
 
-"""Checkpoint"""
+**Checkpoint**
 
 - LIMIT

@@ -73,7 +73,7 @@ Explanation: There are no single numbers in the input table so we return null.
 
 ---
 
-"""Checkpoint"""
+**Checkpoint**
 
 - `GROUP BY`를 사용하고 있으므로 모든 숫자가 한 행씩 생김
     - 그룹별 최댓값(즉, 모든 값)에 대한 갯수
