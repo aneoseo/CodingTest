@@ -47,12 +47,6 @@ Output:
 
 ---
 
-"""오답 노트"""
-
-- MySQL에서는 `PIVOT` 구문을 직접 지원하지 않음
-
----
-
 """Checkpoint"""
 
-- UNPIVOT
+- MySQL에서는 `PIVOT`/`UNPIVOT` 구문을 직접 지원하지 않음

@@ -49,15 +49,9 @@ Output:
 
 ---
 
-"""오답 노트"""
+"""Checkpoint"""
 
-- `GROUP_CONCAT()`
+- GROUP_CONCAT()
     - `GROUP BY`를 사용했을 때, 그룹별로 문자열들을 합치는 함수(집계 함수)
     - `CONCAT()`이 단일 행에서 여러 컬럼이나 문자열을 붙인다면, `GROUP_CONCAT()`은 여러 행의 값을 하나의 문자열로 합치고 싶을 때 사용
     - `SEPARATOR`를 이용해 연결 사이에 넣을 구분자 지정 가능
-
----
-
-"""Checkpoint"""
-
-- GROUP_CONCAT

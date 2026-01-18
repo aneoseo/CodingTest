@@ -66,12 +66,6 @@ Output:
 
 ---
 
-""오답 노트"""
-
-- MySQL은 `FULL OUTER JOIN`을 지원하지 않음
-
----
-
 """Checkpoint"""
 
-- FULL OUTER JOIN
+- MySQL은 `FULL OUTER JOIN`을 지원하지 않음

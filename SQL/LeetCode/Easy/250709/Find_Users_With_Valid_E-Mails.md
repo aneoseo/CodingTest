@@ -53,15 +53,10 @@ Output:
 
 ---
 
-"""오답 노트"""
+"""Checkpoint"""
 
+- 정규표현식
 - `'c'` 옵션
     - 지정되어 있는 도메인 ‘@leetcode.com’에 대해 대소문자를 구분하기 위함
     - `c` → case-sensitive (대소문자 구분)
     - `i` → case-insensitive (기본값)
-
----
-
-"""Checkpoint"""
-
-- 정규표현식

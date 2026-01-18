@@ -73,14 +73,8 @@ Explanation: There are no single numbers in the input table so we return null.
 
 ---
 
-"""오답 노트"""
+"""Checkpoint"""
 
 - `GROUP BY`를 사용하고 있으므로 모든 숫자가 한 행씩 생김
     - 그룹별 최댓값(즉, 모든 값)에 대한 갯수
 - 만약 한 번만 등장한 숫자가 하나도 없으면 `MAX()`는 자동으로 `NULL` 반환
-
----
-
-"""Checkpoint"""
-
-- NULL
