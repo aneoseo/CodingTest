@@ -1,0 +1,86 @@
+Table: `MyNumbers`
+
+```
++-------------+------+
+| Column Name | Type |
++-------------+------+
+| num         | int  |
++-------------+------+
+This table may contain duplicates (In other words, there is no primary key for this table in SQL).
+Each row of this table contains an integer.
+```
+
+---
+
+A single number is a number that appeared only once in the `MyNumbers` table.
+
+Find the largest single number. If there is no single number, report `null`.
+
+---
+
+Example 1:
+
+```
+Input:
+MyNumbers table:
++-----+
+| num |
++-----+
+| 8   |
+| 8   |
+| 3   |
+| 3   |
+| 1   |
+| 4   |
+| 5   |
+| 6   |
++-----+
+Output:
++-----+
+| num |
++-----+
+| 6   |
++-----+
+Explanation: The single numbers are 1, 4, 5, and 6.
+Since 6 is the largest single number, we return it.
+
+```
+
+Example 2:
+
+```
+Input:
+MyNumbers table:
++-----+
+| num |
++-----+
+| 8   |
+| 8   |
+| 7   |
+| 7   |
+| 3   |
+| 3   |
+| 3   |
++-----+
+Output:
++------+
+| num  |
++------+
+| null |
++------+
+Explanation: There are no single numbers in the input table so we return null.
+```
+
+---
+
+"""오답 노트"""
+
+- `GROUP BY`를 사용하고 있으므로 모든 숫자가 한 행씩 생김
+    - 그룹별 최댓값(즉, 모든 값)에 대한 갯수
+- 만약 한 번만 등장한 숫자가 하나도 없으면 `MAX()`는 자동으로 `NULL` 반환
+
+---
+
+"""Checkpoint"""
+
+- NULL
