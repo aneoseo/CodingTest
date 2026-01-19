@@ -1,0 +1,31 @@
+-- 오답 코드
+
+-- SELECT FOOD_TYPE, REST_ID, REST_NAME, MAX(FAVORITES) FAVORITES
+-- FROM REST_INFO
+-- GROUP BY FOOD_TYPE
+-- ORDER BY FOOD_TYPE DESC;
+
+-- `GROUP BY` 구문에서 집계 함수(`MAX(FAVORITES)`)는 사용할 수 있지만, 나머지 컬럼들(`REST_ID`, `REST_NAME`)은 집계 대상이 아님에도 SELECT에 포함되어 있음
+-- `MAX(FAVORITES)`는 음식종류별 최대 즐겨찾기수를 맞게 가져오지만, 같이 나오는 `REST_ID`, `REST_NAME`은 해당 값과 무관한, 같은 `FOOD_TYPE` 내의 아무 레코드일 수 있음
+
+
+-- 정답 코드
+
+SELECT FOOD_TYPE, REST_ID, REST_NAME, FAVORITES
+FROM REST_INFO
+WHERE (FOOD_TYPE, FAVORITES) IN (SELECT FOOD_TYPE, MAX(FAVORITES) 
+                                FROM REST_INFO 
+                                GROUP BY FOOD_TYPE)
+ORDER BY FOOD_TYPE DESC;
+
+-- 정답 코드
+
+-- WITH MaxFavorites AS (
+--     SELECT FOOD_TYPE, MAX(FAVORITES) AS MAX_FAV
+--     FROM REST_INFO
+--     GROUP BY FOOD_TYPE
+-- )
+-- SELECT R.FOOD_TYPE, R.REST_ID, R.REST_NAME, R.FAVORITES
+-- FROM REST_INFO R JOIN MaxFavorites M
+--     ON (R.FOOD_TYPE = M.FOOD_TYPE) AND (R.FAVORITES = M.MAX_FAV)
+-- ORDER BY R.FOOD_TYPE DESC;
