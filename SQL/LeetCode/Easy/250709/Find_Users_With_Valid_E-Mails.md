@@ -55,8 +55,12 @@ Output:
 
 **Checkpoint**
 
-- 정규표현식
+- [MySQL] 정규표현식 문법
+    - `col REGEXP 'pattern'`
+    - `REGEXP_LIKE(col, 'pattern')`
 - `'c'` 옵션
     - 지정되어 있는 도메인 ‘@leetcode.com’에 대해 대소문자를 구분하기 위함
     - `c` → case-sensitive (대소문자 구분)
     - `i` → case-insensitive (기본값)
+- `\`(`₩`): 표현식에서 후속 문자를 일반문자로 처리하는 정규표현식 메타문자) → [MySQL] `\\`
+    - `\`가 이스케이프(excape) 문자로 동작하기 때문
