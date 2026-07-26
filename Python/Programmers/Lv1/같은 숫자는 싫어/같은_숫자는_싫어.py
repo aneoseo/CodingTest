@@ -6,4 +6,3 @@ def solution(arr):
             answer.append(num)
     
     return answer
-#
