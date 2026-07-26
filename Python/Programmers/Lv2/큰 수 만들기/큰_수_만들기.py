@@ -1,4 +1,5 @@
 # O(k*n)
+# `number` 길이가 크면 시간 초과
 
 # def solution(number, k):
 
@@ -22,8 +23,8 @@
 #     return number
 
 
-# 스택
 # O(n)
+# 스택
 
 def solution(number, k):
     stack = []
