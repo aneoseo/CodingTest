@@ -24,10 +24,10 @@
 # set 사용 (성능 개선)
 
 def solution(n, lost, reserve):
-    # 자신이 여벌을 갖고 있었는데 도난도 당한 경우
     lost_set = set(lost)
     reserve_set = set(reserve)
     
+    # 자신이 여벌을 갖고 있었는데 도난도 당한 경우
     lost = lost_set - reserve_set
     reserve = reserve_set - lost_set
 
