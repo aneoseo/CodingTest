@@ -29,4 +29,3 @@ def solution(answers):
         answer.append(3)
     
     return answer
-#
