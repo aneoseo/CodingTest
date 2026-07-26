@@ -39,4 +39,3 @@ def solution(n, lost, reserve):
             lost.remove(r + 1)
             
     return n - len(lost)
-#
