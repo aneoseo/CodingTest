@@ -42,7 +42,7 @@ def solution(rectangle, characterX, characterY, itemX, itemY):
         x, y, dist = queue.popleft()
 
         if x == tx and y == ty:
-            # 좌표를 2배 확대했으므로 거리도 2배
+            # 거리도 2배
             return dist // 2
 
         for i in range(4):
